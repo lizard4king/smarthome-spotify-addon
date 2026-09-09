@@ -3,6 +3,7 @@ FROM ${BUILD_FROM}
 
 WORKDIR /app
 COPY smarthome /app/smarthome
+COPY addon_entrypoint.py /app/addon_entrypoint.py
 COPY config/spotify_profiles.example.json /app/config/spotify_profiles.example.json
 COPY config/spotify_targets.example.json /app/config/spotify_targets.example.json
 COPY run.sh /run.sh
